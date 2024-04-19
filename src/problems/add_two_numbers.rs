@@ -23,10 +23,10 @@ fn iterate_over_the_lists_and_build_new(
     match (l1, l2) {
         (Some(l1), Some(l2)) => {
             let sum = l1.val + l2.val + carry;
-            println!(
-                "l1.val {0},l2.val {1}, carry {carry:#?}, sum {sum:#?}",
-                l1.val, l2.val
-            );
+            // println!(
+            //     "l1.val {0},l2.val {1}, carry {carry:#?}, sum {sum:#?}",
+            //     l1.val, l2.val
+            // );
             if sum > 9 {
                 let last_digit = sum % 10;
                 Some(Box::new(ListNode {
@@ -42,7 +42,7 @@ fn iterate_over_the_lists_and_build_new(
         }
         (Some(l1), None) => {
             let sum = l1.val + carry;
-            println!("l1.val {0},None, carry {carry:#?}, sum {sum:#?}", l1.val);
+            // println!("l1.val {0},None, carry {carry:#?}, sum {sum:#?}", l1.val);
             if sum > 9 {
                 let last_digit = sum % 10;
                 Some(Box::new(ListNode {
@@ -58,7 +58,7 @@ fn iterate_over_the_lists_and_build_new(
         }
         (None, Some(l2)) => {
             let sum = l2.val + carry;
-            println!("None, l2.val {0}, carry {carry:#?}, sum {sum:#?}", l2.val);
+            // println!("None, l2.val {0}, carry {carry:#?}, sum {sum:#?}", l2.val);
             if sum > 9 {
                 let last_digit = sum % 10;
                 Some(Box::new(ListNode {
