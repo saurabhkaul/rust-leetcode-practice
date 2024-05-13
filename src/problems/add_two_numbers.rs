@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/add-two-numbers/
 
+use crate::problems::Solution;
+
 // Definition for singly-linked list.
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Clone, Debug)]

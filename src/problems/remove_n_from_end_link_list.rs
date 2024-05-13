@@ -1,6 +1,8 @@
 //https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
 
+use crate::problems::Solution;
+
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
