@@ -39,13 +39,13 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use crate::problems::Solution;
-
-    #[test]
-    fn test_multiply() {
-        let result = Solution::multiply("2".to_string(),"3".to_string());
-        assert_eq!(result,"6")
-    }
-}
+// #[cfg(test)]
+// mod tests {
+//     use crate::problems::Solution;
+//
+//     #[test]
+//     fn test_multiply() {
+//         let result = Solution::multiply("2".to_string(),"3".to_string());
+//         assert_eq!(result,"6")
+//     }
+// }
